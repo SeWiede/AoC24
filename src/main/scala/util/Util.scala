@@ -1,6 +1,6 @@
 package util
 
-import scala.annotation.{tailrec, targetName}
+import scala.annotation.tailrec
 import scala.collection.mutable
 import scala.io.Source
 import scala.util.Using
