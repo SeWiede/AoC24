@@ -14,5 +14,4 @@ object Day2 extends Day(2):
 
   def safe(seq: Array[(Int, Int)], step: (Int, Int) => Boolean): Boolean = seq.forall((l, r) => step(l, r) && Math.abs(l - r) >= 1 && Math.abs(l - r) <= 3)
 
-  def withTolerance(seq: Array[Int]): List[Array[Int]] =
-    seq.indices.map(i => seq.patch(i, Nil, 1)).toList
+  def withTolerance(seq: Array[Int]): List[Array[Int]] = seq.indices.map(i => seq.patch(i, Nil, 1)).toList
